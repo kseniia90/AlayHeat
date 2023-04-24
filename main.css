@@ -1025,6 +1025,10 @@ body {
 }
 .news__posts .news__post {
   max-width: 280px;
+  transition: all 0.2s ease;
+}
+.news__posts .news__post:hover {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
 }
 .news__posts .news__post a {
   display: flex;
@@ -1118,6 +1122,10 @@ body {
   align-items: flex-start;
   flex-direction: column;
   max-width: 190px;
+  transition: all 0.2s ease;
+}
+.search .result-item:hover {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
 }
 .search .result-item-img {
   display: flex;
@@ -1757,6 +1765,10 @@ ol.breadcrumb li.active {
   align-items: flex-start;
   flex-direction: column;
   max-width: 228px;
+  transition: all 0.2s ease;
+}
+.slider-block .result-item:hover {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 1130px) {
   .slider-block .result-item {
@@ -2190,6 +2202,10 @@ ol.breadcrumb li.active {
   align-items: flex-start;
   flex-direction: column;
   max-width: 190px;
+  transition: all 0.2s ease;
+}
+.categories .result-item:hover {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
 }
 .categories .result-item-img {
   display: flex;
@@ -2344,6 +2360,9 @@ ol.breadcrumb li.active {
     row-gap: 32px;
   }
 }
+.footer-container .footer__body .footer__list-item:hover {
+  color: #B11F20;
+}
 .footer-container .footer__body .footer__left {
   display: flex;
   justify-content: flex-start;
@@ -2436,9 +2455,6 @@ ol.breadcrumb li.active {
     max-width: 180px;
   }
 }
-.footer-container .footer__body .footer__center .footer__catalog__list-item:hover {
-  color: #B11F20;
-}
 .footer-container .footer__body .footer__center .footer__for-customers {
   display: flex;
   justify-content: flex-start;
@@ -2527,6 +2543,9 @@ ol.breadcrumb li.active {
 }
 .footer-container .footer__body .footer__right .footer__news__post-title, .footer-container .footer__body .footer__right .footer__articles__post-title {
   padding: 0 16px;
+}
+.footer-container .footer__body .footer__right .footer__news__post:hover, .footer-container .footer__body .footer__right .footer__articles__post:hover {
+  color: #B11F20;
 }
 .footer-container .footer__body .footer-hover:hover {
   color: #B11F20;

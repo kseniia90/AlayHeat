@@ -7,7 +7,7 @@ const menuButton = document.querySelector(".catalog-btn");
 
 
 document.addEventListener("click", function(event){
-  if(event.target.closest('.menu__icon')){
+  if(event.target.closest('.catalog-btn')){
     //document.body.classList.toggle("lock");
     menuBody.classList.toggle("_active");
     menuIcon.classList.toggle("_active");
@@ -56,7 +56,7 @@ document.querySelectorAll(".dropdown-link").forEach(dropDownFunc);
 function dropDownFunc(dropDown) {
   if (dropDown.classList.contains("dropdown-link") === true) {
     dropDown.addEventListener("click", function (e) {
-      e.preventDefault();
+      //e.preventDefault();
 
       if (
         this.nextElementSibling.classList.contains("dropdown-active") === true
