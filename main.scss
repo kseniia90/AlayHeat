@@ -1,10 +1,17 @@
 @import './scss/normalize.scss';
 @import './scss/vars_and_mixins.scss';
 @import './scss/fonts.scss';
+@import './scss/fonts_icon.scss';
 
 $tablet: 1195px;
 $mobile: 429px;
 $red: #B11F20;
+$icon-phone2_icon: "\e900";
+$icon-phone_icon: "\e901";
+$icon-mail_icon: "\e902";
+$icon-telegram_icon: "\e903";
+$icon-viber_icon: "\e904";
+$icon-fb_icon: "\e905";
 
 // заборонили scroll body при відкритому меню-бургер
 body.lock {
@@ -14,7 +21,7 @@ body {
     @include font($font-regular, 16px, 19px, #000000); 
 }
 .wrapper {
-    max-width: 1440px;
+    //max-width: 1440px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -140,13 +147,21 @@ body {
     &__nav {
         @include flex(center, center, row);
         background-color: #F6F6F6;
-        min-height: 35px;
+        @media (max-width:450px) {
+            overflow-x: auto;
+            scrollbar-width: none;  /* Firefox */
+            ::-webkit-scrollbar {
+                display: none;
+              }
+        } 
     }
     &__menu__list {
         @include flex(center, center, row);
         position: relative; 
-        @media (max-width: 330px) {
-            flex-wrap: wrap;
+        min-height: 35px;
+        width: 100%;
+        @media (max-width:450px) {
+            justify-content: flex-start;
         }
         .header__nav-link {
             display: inline;
@@ -179,9 +194,6 @@ body {
         padding-top: 10px;
         display: none; 
         z-index: 10;
-        // opacity: 0;
-	    // visibility: hidden;
-	    // transition: opacity 0.3s ease-out, visibility 0.1s 0.1s linear;
         li {
             padding: 3px 0 6px 20px;
             width: 100%;
@@ -231,7 +243,7 @@ body {
             @include flex(flex-end, center, row-reverse);
         }
         &._active {
-            left: 321px;
+            left: 264px;
             @media (max-width: $mobile) {
                 left: 0;
             }
@@ -287,6 +299,7 @@ body {
 }
 .menu {
     &__body {
+        max-width: 264px;
         position: fixed;
         left: -100%;
         top: 0;
@@ -319,14 +332,22 @@ body {
             @include font($font-regular, 12px, 15px, #000000); 
             > a {
                 display: inline-block;
-                margin-bottom: 16px;
+                margin-bottom: 12px;
                 padding: 0 0 0 20px; 
             }
         }
         .menu-item {
+            padding: 4px 5px 4px 20px; 
             &._active {
                 @include font($font-bold, 12px, 15px, #FFFFFF); 
                 padding: 4px 0 5px 20px; 
+                background-color: $red;
+                display: inline-block;
+                width: 100%; 
+            }
+            &:hover {
+                @include font($font-bold, 12px, 15px, #FFFFFF); 
+                //padding: 4px 0 5px 20px; 
                 background-color: $red;
                 display: inline-block;
                 width: 100%; 
@@ -343,6 +364,9 @@ body {
             > a {
                 display: inline-block;
                 &.active {
+                    @include font($font-bold, 11px, 13px, $red);
+                }
+                &:hover {
                     @include font($font-bold, 11px, 13px, $red);
                 }
             }
@@ -417,6 +441,7 @@ body {
         }
         & a {
             @include flex(flex-start, center, column);
+            transition: all 0.2s ease;
             &:hover {
                filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.5));
             }
@@ -1108,6 +1133,10 @@ ol.breadcrumb li {
             max-width: 376px;
             & a {
                 @include flex(flex-start, center, column);
+                transition: all 0.2s ease;
+                &:hover {
+                    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
+                 }
             }
             &__img {
                 width: 100%;            
@@ -1222,7 +1251,11 @@ ol.breadcrumb li {
             }
             &.active {
                 background-color: $red;
-                @include font($font-bold, 17px, 21px, #FFFFFF); 
+                @include font($font-regular, 17px, 21px, #FFFFFF); 
+            }
+            &:hover {
+                background-color: $red;
+                @include font($font-regular, 17px, 21px, #FFFFFF);
             }
         }
     }
@@ -1367,6 +1400,7 @@ ol.breadcrumb li {
                     margin-right: 5px;
                 }
                 .footer__contact {
+                    
                     &-phone {
                         margin: 16px auto;
                         @include flex(flex-start, center, row);
@@ -1409,6 +1443,11 @@ ol.breadcrumb li {
                         }
                         @media (max-width: 590px) {
                             max-width: 180px;
+                        }
+                        &-item {
+                            &:hover {
+                                color: $red;
+                            }
                         }
                     }
                 }
@@ -1470,6 +1509,9 @@ ol.breadcrumb li {
                     }
                 }
             }
+            .footer-hover:hover {
+                color: $red;
+            }
         }
         .footer__copyright {
             border-top: 1px solid #828282;
@@ -1483,7 +1525,7 @@ ol.breadcrumb li {
                 }
             }
         }
-    }    
+    }   
 }
 
  
