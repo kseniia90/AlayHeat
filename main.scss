@@ -928,7 +928,6 @@ body {
             @include font($font-semiBold, 15px, 18px, #000000);
             height: 95px; 
             text-align: center;
-            border: 1px solid blue;
             @media (max-width: 460px) {
                 width: 150px;
             }
