@@ -1655,7 +1655,7 @@ body {
   border-collapse: collapse;
   width: 100%;
   white-space: nowrap;
-  min-width: 867px;
+  min-width: 820px;
 }
 .product-table th {
   font-size: 15px;
@@ -1664,10 +1664,11 @@ body {
   color: #000000;
   height: 95px;
   text-align: center;
+  border: 1px solid blue;
 }
 @media (max-width: 460px) {
   .product-table th {
-    max-width: 60px;
+    width: 150px;
   }
 }
 .product-table th:first-child, .product-table th:last-child {
