@@ -1655,7 +1655,7 @@ body {
   border-collapse: collapse;
   width: 100%;
   white-space: nowrap;
-  min-width: 820px;
+  min-width: 750px;
 }
 .product-table th {
   font-size: 15px;

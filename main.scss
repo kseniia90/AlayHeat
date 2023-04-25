@@ -922,7 +922,7 @@ body {
             border-collapse: collapse;
             width: 100%;
             white-space: nowrap;
-            min-width: 820px;
+            min-width: 750px;
         }
         th {
             @include font($font-semiBold, 15px, 18px, #000000);
