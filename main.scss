@@ -170,8 +170,6 @@ body {
             cursor: pointer;
             &:hover, &:active, &:focus {
                 >a {
-                    //font-family: $font-bold;
-                    text-shadow: 0.7px 0.1px #a8191a;
                     color: $red;
                 }
             }
@@ -374,7 +372,6 @@ body {
     }
     &__sublist2 {
         margin-left: 10px;
-        //display: none;
         &-item {
             @include font($font-regular, 10px, 12px, #000000); 
             > a {
@@ -385,6 +382,24 @@ body {
             }
             &:first-child {
                 margin-top: 18px;
+            }
+            &:last-child {
+                margin-bottom: 16px;
+            }
+        }
+    }
+    &__sublist3 {
+        &-item {
+            //margin-left: 10px;
+            @include font($font-regular, 10px, 12px, #000000); 
+            > a {
+                display: inline-block;               
+            }
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+            &:first-child {
+                margin-top: 8px;
             }
             &:last-child {
                 margin-bottom: 16px;
@@ -578,6 +593,9 @@ body {
         transition: all 0.2s ease;
             &:hover {
                box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+               .img-after {
+                display: block;
+            }
             }
         &-img {
             @include flex(center, center, row);
@@ -601,21 +619,18 @@ body {
                 background: rgba(0, 0, 0, 0.6);
                 display: none;
             }
-            &:hover {
-                .img-after {
-                    display: block;
-                }
-            }
         }
         &-title {
             margin: 16px 0 6px;
             @include font($font-regular, 12px, 15px, #000000); 
             opacity: 0.8;
+            padding: 0 5px;
         }
         &-text {
             @include font($font-regular, 12px, 15px, #000000); 
             opacity: 0.8;
             width: 100%;
+            padding: 0 5px 5px;
             .red-text {
                 @include font($font-medium, 12px, 15px, $red);   
             }
@@ -906,7 +921,6 @@ body {
         table {
             border-collapse: collapse;
             width: 100%;
-            // display: block;
             white-space: nowrap;
             min-width: 867px;
         }
@@ -914,8 +928,14 @@ body {
             @include font($font-semiBold, 15px, 18px, #000000);
             height: 95px; 
             text-align: center;
+            @media (max-width: 460px) {
+                max-width: 60px;
+            }
             &:first-child, &:last-child {
                 width: 25%;
+                @media (max-width: 460px) {
+                    width: 15%;
+                }
             }          
         }
         tr {
@@ -1000,6 +1020,9 @@ ol.breadcrumb li {
         transition: all 0.2s ease;
             &:hover {
                box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+               .img-after {
+                display: block;
+            }
             }
         @media(max-width: 1130px) {
             max-width: 220px;
@@ -1039,10 +1062,12 @@ ol.breadcrumb li {
             margin: 16px 0 6px;
             @include font($font-regular, 12px, 15px, #000000); 
             opacity: 0.8;
+            padding: 0 5px;
         }
         &-text {
             @include font($font-regular, 12px, 15px, #000000); 
             opacity: 0.8;
+            padding: 0 5px 5px;
             width: 100%;
             .red-text {
                 @include font($font-medium, 12px, 15px, $red);   
@@ -1055,7 +1080,7 @@ ol.breadcrumb li {
         padding-bottom: 16px;
         width: 100%;
         border-bottom: 2px solid $red;
-        margin-bottom: 48px;
+        margin: 56px 0 48px;
     }
     .main-news__post {
         @include flex(flex-start, stretch, row);
@@ -1194,6 +1219,9 @@ ol.breadcrumb li {
         .main-news {
             @include flex(flex-start, flex-start, column);
             flex: 0 1 calc(884/1176*100%); /// 1 1
+            .main-news-title {
+                margin: 0px;
+            }
             &__post {
                 @include flex(flex-start, flex-start, column);
             }
@@ -1293,6 +1321,9 @@ ol.breadcrumb li {
         transition: all 0.2s ease;
             &:hover {
                box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+               .img-after {
+                display: block;
+            }
             }
         &-img {
             @include flex(center, center, row);
@@ -1316,21 +1347,18 @@ ol.breadcrumb li {
                 background: rgba(0, 0, 0, 0.6);
                 display: none;
             }
-            &:hover {
-                .img-after {
-                    display: block;
-                }
-            }
         }
         &-title {
             margin: 16px 0 6px;
             @include font($font-regular, 12px, 15px, #000000); 
             opacity: 0.8;
+            padding: 0 5px;
         }
         &-text {
             @include font($font-regular, 12px, 15px, #000000); 
             opacity: 0.8;
             width: 100%;
+            padding: 0 5px 5px;
             .red-text {
                 @include font($font-medium, 12px, 15px, $red);   
             }
@@ -1342,6 +1370,7 @@ ol.breadcrumb li {
 }
 .footer {
     background-color: #292929;
+    padding-bottom: 10px;
     @include font($font-regular, 10px, 12px, #F6F6F6); 
     &__title {
         @include font($font-bold, 15px, 18px, #FFFFFF);
@@ -1500,6 +1529,10 @@ ol.breadcrumb li {
                 @media (max-width: 720px) {
                     gap: 14px;
                 }
+                @media (max-width: 590px) {
+                    justify-content: space-between;
+                    width: 100%;
+                }
                 .footer__news, .footer__articles {
                     @include flex(flex-start, flex-start, column);
                     &__list {
@@ -1525,6 +1558,9 @@ ol.breadcrumb li {
                         &:hover {
                             color: $red;
                         }
+                    }
+                    @media (max-width: 590px) {
+                        min-width: 180px;
                     }
                 }
             }
