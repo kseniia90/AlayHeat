@@ -651,10 +651,10 @@ body {
             margin: 13px auto 56px;
         }
         &-main {
-            @include flex(space-between, center, row);
+            @include flex(stretch, stretch, row);
             margin-bottom: 56px;
             @media(max-width: 767px) { 
-                @include flex(flex-start, center, column); 
+                @include flex(flex-start, flex-start, column); 
             }
             @media(max-width: $tablet) { 
                 margin-bottom: 44px;
@@ -679,11 +679,22 @@ body {
                 }
             }
             .main-right {
-                align-self: flex-end;
+                // align-self: flex-end;
                 @media(max-width: 767px) { 
                     align-self: center; 
                 }
-                ul li {
+                @include flex(flex-start, center, column);
+                padding: 5px 0 0 0;
+
+                &__icon-block {
+                    flex: 1 0 auto;
+                    max-width: 240px;
+                    @include flex(center, center, row);
+                    flex-wrap: wrap;
+                    gap: 16px;
+                    margin-bottom: 32px;               
+                }
+                &__list li {
                     padding: 16px 41px;
                     background-color: #F6F6F6;
                     @include font($font-regular, 17px, 21px, #000000);
@@ -950,6 +961,21 @@ body {
         }
     }
 }
+// .icon-block-icon .light-gray,
+// .icon-block-icon .red {
+//     transition: 0.1s all ease; 
+// }      
+.icon-block-icon:hover {
+    .light-gray {
+        fill: #B11F20;
+        stroke: #B11F20;
+    }
+    .red {
+        fill: #FFFFFF;
+        stroke: #FFFFFF;
+        stroke-width: 1;
+    }
+}                
 ol.breadcrumb li {
     list-style-type: none;
     display: inline;
@@ -1298,6 +1324,17 @@ ol.breadcrumb li {
                 @include font($font-regular, 17px, 21px, #FFFFFF);
             }
         }
+    }
+    &__icon-block {
+        max-width: calc(698/1177 * 100%);
+        margin: 24px auto 0;
+        @include flex(center, center, row);
+        gap: 24px;
+        @media(max-width: 767px) {
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+       
     }
     &-title {
         @include font($font-bold, 30px, 37px, #000000); 
