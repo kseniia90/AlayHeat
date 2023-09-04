@@ -1,0 +1,69 @@
+$icomoon-font-family: "AlayHeatIcons" !default;
+$icomoon-font-path: "fonts/AlayHeatIcons" !default;
+
+$icon-phone2_icon: "\e900";
+$icon-phone_icon: "\e901";
+$icon-mail_icon: "\e902";
+$icon-telegram_icon: "\e903";
+$icon-viber_icon: "\e904";
+$icon-fb_icon: "\e905";
+
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7chke6');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7chke6#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?7chke6') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?7chke6') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?7chke6##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone2_icon {
+  &:before {
+    content: $icon-phone2_icon; 
+  }
+}
+.icon-phone_icon {
+  &:before {
+    content: $icon-phone_icon; 
+  }
+}
+.icon-mail_icon {
+  &:before {
+    content: $icon-mail_icon; 
+  }
+}
+.icon-telegram_icon {
+  &:before {
+    content: $icon-telegram_icon; 
+  }
+}
+.icon-viber_icon {
+  &:before {
+    content: $icon-viber_icon; 
+  }
+}
+.icon-fb_icon {
+  &:before {
+    content: $icon-fb_icon; 
+  }
+}

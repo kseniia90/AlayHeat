@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./main.css">
+    <title>ALAY HEAT</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container container">
+                <div class="header__main">
+                    <div class="header__main-left">
+                        <a class="header__main-logo" href="https://beta.nb-soft.tech"><img
+                                src="https://beta.nb-soft.tech/wp-content/themes/alay/img/logo_1.svg" alt="logo"></a>
+                        <form action="#" class="header__main-form search-form">
+                            <input class="header__main-input" type="text" placeholder="Введіть запит" />
+                            <button id="search_for_site" class="header__main-search"><img
+                                    src="https://beta.nb-soft.tech/wp-content/themes/alay/img/search_icon.png"
+                                    alt=""></button>
+                            <div class="search-results"></div>
+                        </form>
+                    </div>
+                    <div class="header__main__lang">
+                        <a class="header__main__lang-item" href="https://beta.nb-soft.tech/en/">EN</a><a href="#"
+                            class="header__main__lang-item active">UA</a>
+                    </div>
+                    <div class="burger-menu">
+                        <div class="burger-menu-btn">
+                            <div class="burger-menu__icon">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__menu__list">
+                    <li class="header__nav-link">
+                        <a class="dropdown-link hover-dropdown" href="https://beta.nb-soft.tech/kompaniya/">Компанія</a>
+                        <ul class="header__submenu__list">
+                            <li><a href="#">Про нас</a></li>
+                            <li><a href="#">Качество</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-link">
+                        <a class="dropdown-link hover-dropdown" href="https://beta.nb-soft.tech/novyny/">Новини</a>
+                    </li>
+                    <li class="header__nav-link">
+                        <a class="dropdown-link hover-dropdown" href="https://beta.nb-soft.tech/statti/">Статті</a>
+                        <ul class="header__submenu__list">
+                            <li><a href="#">Что то новое</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="catalog">
+            <div class="catalog-btn">
+                <span class="">каталог</span>
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+            </div>
+            <nav class="menu__body">
+                <p class="menu__title">каталог</p>
+                <ul class="menu__list">
+                    <ul class="menu__sublist">
+                        <li class='menu__sublist-item'><a class=""
+                                href="https://beta.nb-soft.tech/product-category/kabelno-providnykova-produkcziya-tm-speczkabel-nvp-alaj/">Кабельно-провідникова
+                                продукція ТМ «Спецкабель» НВП АЛАЙ</a></li>
+                        <ul class="menu__sublist">
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/provoda-dlya-zvyazku-ta-sygnalizacziyi/">Провода
+                                    для зв’язку та сигналізації</a></li>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/kabeli-dlya-zvyazku-ta-sygnalizacziyi/">Кабелі
+                                    для зв’язку та сигналізації</a></li>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/kabeli-dlya-zvyazku-ta-sygnalizacziyi-z-pokrashhenymy-harakterystykamy-parnoyi-skrutky/">Кабелі
+                                    для зв’язку та сигналізації з покращеними характеристиками парної скрутки</a></li>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/kabeli-vognestijki/">Кабелі
+                                    вогнестійкі</a></li>
+                            <ul class="menu__sublist">
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/sylovi-odno-ta-mnogozhylni/">Силові
+                                        (одно- та многожильні)</a></li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/kontrolni/">Контрольні</a></li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/dlya-zvyazku-ta-sygnalizacziyi/">Для
+                                        зв’язку та сигналізації</a></li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/parni/">Парні</a></li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/upravlinnya-ta-peredachi-danyh/">Управління
+                                        та передачі даних</a></li>
+                                </li>
+                            </ul>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/kabeli-sylovi-na-kontrolni-monozhylni/">Кабелі
+                                    силові на контрольні моножильні</a></li>
+                            <ul class="menu__sublist">
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/sylovi/">Силові</a></li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/sylovi-bronovani/">Силові
+                                        броньовані</a></li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/kontrolni-2/">Контрольні</a>
+                                </li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/kontrolni-bronovani/">Контрольні
+                                        броньовані</a></li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/kontrolni-ekranovani/">Контрольні
+                                        екрановані</a></li>
+                                </li>
+                            </ul>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/powermatic-kabel-gnuchkyj-sylovyj-ta-kontrolnyj/">POWERMATIC®
+                                    Кабель гнучкий силовий та контрольний</a></li>
+                            <ul class="menu__sublist">
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/universalni/">Універсальні</a>
+                                </li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/kabeli-dlya-servodvyguniv/">Кабелі
+                                        для серводвигунів</a></li>
+                                </li>
+                            </ul>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/unimatic-kabeli-gnuchki-upravlinnya-kontrolni/">UNIMATIC®
+                                    Кабелі гнучкі управління, контрольні</a></li>
+                            <ul class="menu__sublist">
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/universalni-2/">Універсальні</a>
+                                </li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/kabeli-dlya-ekstremalnyh-umov-ekspluatacziyi/">Кабелі
+                                        для екстремальних умов експлуатації</a></li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/iskrobezpechni-lanczyugy/">Іскробезпечні
+                                        ланцюги</a></li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/buksovani-lanczyugy/">Буксовані
+                                        ланцюги</a></li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/kabeli-dlya-bus-system/">Кабелі
+                                        для BUS-систем</a></li>
+                                </li>
+                            </ul>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/signalmatic-kabeli-peredachi-danyh-nyzkochastotni/">SIGNALMATIC®
+                                    Кабелі передачі даних, низькочастотні</a></li>
+                            <ul class="menu__sublist">
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/universalni-3/">Універсальні</a>
+                                </li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/kabeli-dlya-ekstremalnyh-umov-ekspluatacziyi-2/">Кабелі
+                                        для екстремальних умов експлуатації</a></li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/kabeli-telefonni/">Кабелі
+                                        телефонні</a></li>
+                                </li>
+                            </ul>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/lan-kabeli-kabeli-ethernet/">LAN-кабелі,
+                                    кабелі Ethernet</a></li>
+                            <ul class="menu__sublist">
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/kategoriyi-5e/">Категорії
+                                        5е</a></li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/kategoriyi-6/">Категорії 6</a>
+                                </li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/kategoriyi-6a/">Категорії
+                                        6А</a></li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/vognestijkyj-lan-kabel/">Вогнестійкий
+                                        LAN-кабель</a></li>
+                                </li>
+                            </ul>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/industrial-ethernet/">Industrial
+                                    Ethernet</a></li>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/provody-odnozhylni/">Проводи
+                                    одножильні</a></li>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/provody-odnozhylni-gnuchki/">Проводи
+                                    одножильні гнучкі</a></li>
+                            <ul class="menu__sublist">
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/universalni-4/">Універсальні</a>
+                                </li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/bezgalogenni/">Безгалогенні</a>
+                                </li>
+                                </li>
+                                <li class='menu__sublist-item'><a class=""
+                                        href="https://beta.nb-soft.tech/product-category/z-pokrashhenoyu-elektromagnitnoyu-sumisnistyu/">З
+                                        покращеною електромагнітною сумісністю</a></li>
+                                </li>
+                            </ul>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/termostijki-kabeli/">Термостійкі
+                                    кабелі</a></li>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/kabeli-liftovi/">Кабелі ліфтові</a>
+                            </li>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class='menu__sublist-item'><a class=""
+                                href="https://beta.nb-soft.tech/product-category/ohoronno-pozhezhna-sygnalizacziya-nvp-alaj/">Охоронно-пожежна
+                                сигналізація НВП АЛАЙ</a></li>
+                        <ul class="menu__sublist">
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/spovishhuvachi-pozhezhni/">Сповіщувачі
+                                    пожежні</a></li>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/spovishhuvachi-ohoronni/">Сповіщувачі
+                                    охоронні</a></li>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/spovishhuvachi-ohoronni-magnitokontaktni/">Сповіщувачі
+                                    охоронні магнітоконтактні</a></li>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/opovishhuvachi-pozhezhni/">Оповіщувачі
+                                    пожежні</a></li>
+                            </li>
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/opovishhuvachi-ohoronni/">Оповіщувачі
+                                    охоронні</a></li>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class='menu__sublist-item'><a class=""
+                                href="https://beta.nb-soft.tech/product-category/kabelni-systemy-obigrivu-ta-antyobledeninnya-alay-heat/">Кабельні
+                                системи обігріву та антиобледеніння ALAY HEAT</a></li>
+                        <ul class="menu__sublist">
+                            <li class='menu__sublist-item'><a class=""
+                                    href="https://beta.nb-soft.tech/product-category/dvohzhylni-kabeli/">Двохжильні
+                                    кабелі</a></li>
+                            </li>
+                        </ul>
+                        </li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+        <main class="main">
+                <div class="contacts">
+                        <div class="container"><h2 class="contacts-title title-underlined">Контакти</h2></div>
+                        <div class="contacts__block container">
+                                <div class="contacts__block__item">
+                                        <div class="contacts__block__item-left">
+                                                <h3 class="contacts__block__item-title title25">відділ продажів</h3>
+                                                <p class="contacts__block__item-text"><span class="bold-text">Графік роботи:</span> Пн.-Пт: з 9.00 до 17.30</p>
+                                                <ul class="contacts__block__item-list">
+                                                        <li class="contacts__block__item-list-item">
+                                                                <p class="bold-text">Ярослава</p>
+                                                                <div class="contacts__icon-block">
+                                                                        <a href="#">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
+                                                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1464 0.618345C13.341 -0.206115 9.39473 -0.206115 5.58936 0.618345L5.17933 0.706268C4.10892 0.938222 3.12581 1.45324 2.33921 2.19412C1.55261 2.935 0.993312 3.87272 0.723449 4.90313C-0.24115 8.58714 -0.24115 12.4463 0.723449 16.1303C0.980806 17.113 1.50166 18.0123 2.23321 18.737C2.81488 19.3132 3.51329 19.7627 4.28178 20.0589C4.64533 20.199 4.93151 20.5026 4.99787 20.8865L5.45147 23.5112C5.46943 23.6145 5.51564 23.7113 5.58529 23.7915C5.65494 23.8716 5.74549 23.9322 5.8475 23.9669C5.94952 24.0016 6.05927 24.0092 6.16533 23.9888C6.27139 23.9685 6.36988 23.9209 6.45054 23.8511L9.44609 21.2539C9.64333 21.0829 9.8996 20.9967 10.1604 21.0082C12.5052 21.1119 14.8545 20.913 17.1464 20.4163L17.5576 20.3284C18.628 20.0964 19.6111 19.5814 20.3977 18.8405C21.1843 18.0996 21.7436 17.1619 22.0135 16.1315C22.978 12.4475 22.978 8.58832 22.0135 4.9043C21.7435 3.87375 21.184 2.93592 20.3972 2.19503C19.6104 1.45414 18.627 0.939201 17.5564 0.70744L17.1464 0.618345ZM6.60908 4.80763C6.60928 4.80773 6.60919 4.80803 6.60896 4.808C6.38739 4.77702 6.16159 4.81943 5.96808 4.92824C5.96322 4.93097 5.95775 4.93244 5.95218 4.93244C5.94666 4.93244 5.94122 4.93388 5.93642 4.93662C5.48577 5.19385 5.07948 5.51714 4.73302 5.89725C4.44273 6.22198 4.28549 6.55022 4.24437 6.86675C4.22072 7.05012 4.23637 7.23572 4.2902 7.41152C4.29257 7.41928 4.29795 7.42574 4.30509 7.42959C4.31194 7.43327 4.31716 7.43938 4.31974 7.44672C4.64579 8.37227 5.07018 9.26287 5.58815 10.1011C6.25626 11.279 7.07785 12.3686 8.03271 13.3433C8.03988 13.3506 8.04651 13.3585 8.05254 13.3667L8.05309 13.3675C8.06595 13.3852 8.08157 13.4006 8.09936 13.4133C8.11206 13.4224 8.12367 13.4329 8.13398 13.4446L8.13503 13.4458C8.14252 13.4544 8.15068 13.4623 8.15941 13.4695L8.18016 13.4868C9.1922 14.4195 10.323 15.2232 11.545 15.8783C12.939 16.6141 13.7862 16.9623 14.2958 17.1082C14.2978 17.1088 14.2991 17.1106 14.2991 17.1127C14.2991 17.1148 14.3005 17.1166 14.3025 17.1172C14.4499 17.1611 14.5844 17.1807 14.72 17.1807C15.1537 17.1497 15.5642 16.9788 15.886 16.6954C16.278 16.3587 16.6099 15.9625 16.8684 15.522C16.8698 15.5196 16.8706 15.5169 16.8706 15.5142C16.8706 15.5115 16.8713 15.5089 16.8725 15.5066C17.1133 15.0625 17.0305 14.6443 16.6807 14.3601C15.9761 13.7635 15.2143 13.2335 14.4056 12.7775C13.8637 12.4927 13.3134 12.665 13.0908 12.9534L12.6155 13.5348C12.3878 13.8036 11.9879 13.7873 11.9344 13.7838C11.9304 13.7835 11.9266 13.7844 11.9231 13.7865C11.9188 13.789 11.9135 13.7897 11.9087 13.7885C8.92447 13.046 7.92015 10.324 7.75649 9.81438C7.73889 9.75958 7.72816 9.70307 7.73017 9.64555C7.73505 9.50579 7.77444 9.22919 7.99631 9.066L8.59139 8.60176C8.87684 8.37668 9.0752 7.84445 8.76919 7.31926C8.30184 6.53471 7.75615 5.79652 7.13997 5.11532C7.00588 4.95536 6.81796 4.84631 6.6092 4.80727C6.60898 4.80723 6.60887 4.80753 6.60908 4.80763ZM12.1909 3.39906C12.0305 3.39906 11.8767 3.46082 11.7633 3.57074C11.6499 3.68067 11.5862 3.82976 11.5862 3.98521C11.5862 4.14067 11.6499 4.28976 11.7633 4.39969C11.8767 4.50961 12.0305 4.57137 12.1909 4.57137C13.721 4.57137 14.991 5.05553 15.9961 5.984C16.5126 6.49161 16.9153 7.093 17.179 7.75184C17.4439 8.41185 17.5648 9.11641 17.5334 9.82214C17.5301 9.89911 17.5424 9.97597 17.5697 10.0483C17.597 10.1207 17.6388 10.1871 17.6926 10.2438C17.8012 10.3584 17.9524 10.4264 18.1128 10.4329C18.2732 10.4394 18.4296 10.3839 18.5478 10.2786C18.666 10.1733 18.7362 10.0268 18.7429 9.87137C18.7804 9.00326 18.6318 8.13705 18.3063 7.32746C17.9794 6.51404 17.4837 5.7743 16.85 5.15401L16.8379 5.14228C15.5909 3.98756 14.0125 3.39906 12.1909 3.39906ZM12.1498 5.32633C11.9894 5.32633 11.8356 5.38809 11.7222 5.49802C11.6088 5.60794 11.545 5.75703 11.545 5.91249C11.545 6.06795 11.6088 6.21704 11.7222 6.32696C11.8356 6.43689 11.9894 6.49864 12.1498 6.49864H12.1704C13.2735 6.57484 14.0766 6.93122 14.639 7.51621C15.216 8.11877 15.5147 8.86788 15.4917 9.794C15.488 9.94946 15.5482 10.1 15.659 10.2124C15.7698 10.3249 15.9222 10.3901 16.0826 10.3936C16.243 10.3972 16.3983 10.3389 16.5143 10.2315C16.6303 10.1241 16.6976 9.97642 16.7012 9.82096C16.7303 8.60569 16.3266 7.55677 15.5264 6.71988C15.5259 6.71934 15.5256 6.71862 15.5256 6.71787C15.5256 6.71711 15.5253 6.71639 15.5248 6.71584C14.706 5.8653 13.5826 5.4154 12.2308 5.32751L12.2103 5.32516L12.1498 5.32633ZM12.1268 7.28995C12.0459 7.28303 11.9644 7.29199 11.8871 7.31628C11.8098 7.34058 11.7383 7.37973 11.677 7.43138C11.6157 7.48303 11.5657 7.54612 11.5301 7.6169C11.4945 7.68769 11.474 7.7647 11.4697 7.84334C11.4655 7.92198 11.4777 8.00064 11.5055 8.07462C11.5333 8.14861 11.5763 8.2164 11.6317 8.27395C11.6872 8.3315 11.754 8.37762 11.8283 8.40957C11.9026 8.44153 11.9827 8.45865 12.0639 8.45992C12.5695 8.48571 12.8925 8.63342 13.0957 8.83154C13.3001 9.03083 13.4525 9.35087 13.4803 9.85144C13.4818 9.9301 13.4996 10.0077 13.5327 10.0795C13.5658 10.1513 13.6135 10.216 13.6729 10.2696C13.7323 10.3232 13.8023 10.3647 13.8786 10.3915C13.9549 10.4184 14.036 10.43 14.117 10.4259C14.1981 10.4217 14.2774 10.4018 14.3504 10.3672C14.4233 10.3327 14.4883 10.2843 14.5415 10.2249C14.5948 10.1655 14.6351 10.0963 14.6602 10.0215C14.6852 9.94664 14.6945 9.86769 14.6874 9.78931C14.6487 9.08593 14.4213 8.4646 13.9556 8.0074C13.4875 7.5502 12.8501 7.32747 12.1268 7.28995Z" fill="#B11F20"/>
+                                                                                </svg>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                                                        <path d="M12.7368 0C6.11282 0 0.736816 5.376 0.736816 12C0.736816 18.624 6.11282 24 12.7368 24C19.3608 24 24.7368 18.624 24.7368 12C24.7368 5.376 19.3608 0 12.7368 0ZM18.3048 8.16C18.1248 10.056 17.3448 14.664 16.9488 16.788C16.7808 17.688 16.4448 17.988 16.1328 18.024C15.4368 18.084 14.9088 17.568 14.2368 17.124C13.1808 16.428 12.5808 15.996 11.5608 15.324C10.3728 14.544 11.1408 14.112 11.8248 13.416C12.0048 13.236 15.0768 10.44 15.1368 10.188C15.1452 10.1498 15.144 10.1102 15.1336 10.0726C15.1231 10.0349 15.1036 10.0004 15.0768 9.972C15.0048 9.912 14.9088 9.936 14.8248 9.948C14.7168 9.972 13.0368 11.088 9.76082 13.296C9.28082 13.62 8.84882 13.788 8.46482 13.776C8.03282 13.764 7.21682 13.536 6.60482 13.332C5.84882 13.092 5.26082 12.96 5.30882 12.54C5.33282 12.324 5.63282 12.108 6.19682 11.88C9.70082 10.356 12.0288 9.348 13.1928 8.868C16.5288 7.476 17.2128 7.236 17.6688 7.236C17.7648 7.236 17.9928 7.26 18.1368 7.38C18.2041 7.43385 18.245 7.49903 18.2701 7.56283C18.3054 7.65281 18.2999 7.75297 18.3032 7.84958C18.3064 7.94309 18.312 8.06004 18.3048 8.16Z" fill="#B11F20"/>
+                                                                                </svg>
+                                                                        </a>
+                                                                        <a href="tel:0996407327">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                                                        <g clip-path="url(#clip0_1613_206)">
+                                                                                        <path d="M8.4665 1.15351C8.10557 0.281636 7.154 -0.182427 6.24463 0.0660105L2.11963 1.19101C1.304 1.41601 0.736816 2.15664 0.736816 3.00039C0.736816 14.5973 10.1399 24.0004 21.7368 24.0004C22.5806 24.0004 23.3212 23.4332 23.5462 22.6176L24.6712 18.4926C24.9196 17.5832 24.4556 16.6316 23.5837 16.2707L19.0837 14.3957C18.3196 14.077 17.4337 14.2973 16.9134 14.9395L15.0196 17.2504C11.7196 15.6894 9.04775 13.0176 7.48682 9.71757L9.79775 7.82851C10.4399 7.30351 10.6603 6.42226 10.3415 5.6582L8.4665 1.1582V1.15351Z" fill="#B11F20"/>
+                                                                                        </g>
+                                                                                        <defs>
+                                                                                        <clipPath id="clip0_1613_206">
+                                                                                        <rect width="24" height="24" fill="white" transform="translate(0.736816)"/>
+                                                                                        </clipPath>
+                                                                                        </defs>
+                                                                                </svg>
+                                                                                <span>(099) 640-73-27</span>
+                                                                        </a>
+                                                                </div>
+                                                                <a href="mailto:sale2(at)alay.com.ua">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
+                                                                                <path d="M3.1 24C2.2475 24 1.51745 23.706 0.909852 23.118C0.302252 22.53 -0.0010307 21.824 2.63158e-06 21V3C2.63158e-06 2.175 0.303803 1.4685 0.911403 0.880502C1.519 0.292502 2.24854 -0.000997453 3.1 2.54669e-06H27.9C28.7525 2.54669e-06 29.4825 0.294002 30.0901 0.882002C30.6977 1.47 31.001 2.176 31 3V21C31 21.825 30.6962 22.5315 30.0886 23.1195C29.481 23.7075 28.7515 24.001 27.9 24H3.1ZM15.5 13.2375C15.6292 13.2375 15.765 13.2185 15.9076 13.1805C16.0502 13.1425 16.1856 13.0865 16.3137 13.0125L27.28 6.375C27.4867 6.25 27.6417 6.0935 27.745 5.9055C27.8483 5.7175 27.9 5.5115 27.9 5.2875C27.9 4.7875 27.6804 4.4125 27.2412 4.1625C26.8021 3.9125 26.35 3.925 25.885 4.2L16.0187 10.1854C15.6999 10.3787 15.3001 10.3787 14.9813 10.1854L5.115 4.2C4.65 3.925 4.19792 3.919 3.75875 4.182C3.31959 4.445 3.1 4.8135 3.1 5.2875C3.1 5.5375 3.15167 5.7565 3.255 5.9445C3.35834 6.1325 3.51334 6.276 3.72 6.375L14.6863 13.0125C14.8154 13.0875 14.9513 13.144 15.0939 13.182C15.2365 13.22 15.3719 13.2385 15.5 13.2375Z" fill="#B11F20"/>
+                                                                        </svg>
+                                                                        <span>sale2(at)alay.com.ua</span>
+                                                                </a>
+                                                        </li>
+                                                        <li class="contacts__block__item-list-item">
+                                                                <p class="bold-text">Олександр</p>
+                                                                <div class="contacts__icon-block">
+                                                                        <a href="#">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
+                                                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1464 0.618345C13.341 -0.206115 9.39473 -0.206115 5.58936 0.618345L5.17933 0.706268C4.10892 0.938222 3.12581 1.45324 2.33921 2.19412C1.55261 2.935 0.993312 3.87272 0.723449 4.90313C-0.24115 8.58714 -0.24115 12.4463 0.723449 16.1303C0.980806 17.113 1.50166 18.0123 2.23321 18.737C2.81488 19.3132 3.51329 19.7627 4.28178 20.0589C4.64533 20.199 4.93151 20.5026 4.99787 20.8865L5.45147 23.5112C5.46943 23.6145 5.51564 23.7113 5.58529 23.7915C5.65494 23.8716 5.74549 23.9322 5.8475 23.9669C5.94952 24.0016 6.05927 24.0092 6.16533 23.9888C6.27139 23.9685 6.36988 23.9209 6.45054 23.8511L9.44609 21.2539C9.64333 21.0829 9.8996 20.9967 10.1604 21.0082C12.5052 21.1119 14.8545 20.913 17.1464 20.4163L17.5576 20.3284C18.628 20.0964 19.6111 19.5814 20.3977 18.8405C21.1843 18.0996 21.7436 17.1619 22.0135 16.1315C22.978 12.4475 22.978 8.58832 22.0135 4.9043C21.7435 3.87375 21.184 2.93592 20.3972 2.19503C19.6104 1.45414 18.627 0.939201 17.5564 0.70744L17.1464 0.618345ZM6.60908 4.80763C6.60928 4.80773 6.60919 4.80803 6.60896 4.808C6.38739 4.77702 6.16159 4.81943 5.96808 4.92824C5.96322 4.93097 5.95775 4.93244 5.95218 4.93244C5.94666 4.93244 5.94122 4.93388 5.93642 4.93662C5.48577 5.19385 5.07948 5.51714 4.73302 5.89725C4.44273 6.22198 4.28549 6.55022 4.24437 6.86675C4.22072 7.05012 4.23637 7.23572 4.2902 7.41152C4.29257 7.41928 4.29795 7.42574 4.30509 7.42959C4.31194 7.43327 4.31716 7.43938 4.31974 7.44672C4.64579 8.37227 5.07018 9.26287 5.58815 10.1011C6.25626 11.279 7.07785 12.3686 8.03271 13.3433C8.03988 13.3506 8.04651 13.3585 8.05254 13.3667L8.05309 13.3675C8.06595 13.3852 8.08157 13.4006 8.09936 13.4133C8.11206 13.4224 8.12367 13.4329 8.13398 13.4446L8.13503 13.4458C8.14252 13.4544 8.15068 13.4623 8.15941 13.4695L8.18016 13.4868C9.1922 14.4195 10.323 15.2232 11.545 15.8783C12.939 16.6141 13.7862 16.9623 14.2958 17.1082C14.2978 17.1088 14.2991 17.1106 14.2991 17.1127C14.2991 17.1148 14.3005 17.1166 14.3025 17.1172C14.4499 17.1611 14.5844 17.1807 14.72 17.1807C15.1537 17.1497 15.5642 16.9788 15.886 16.6954C16.278 16.3587 16.6099 15.9625 16.8684 15.522C16.8698 15.5196 16.8706 15.5169 16.8706 15.5142C16.8706 15.5115 16.8713 15.5089 16.8725 15.5066C17.1133 15.0625 17.0305 14.6443 16.6807 14.3601C15.9761 13.7635 15.2143 13.2335 14.4056 12.7775C13.8637 12.4927 13.3134 12.665 13.0908 12.9534L12.6155 13.5348C12.3878 13.8036 11.9879 13.7873 11.9344 13.7838C11.9304 13.7835 11.9266 13.7844 11.9231 13.7865C11.9188 13.789 11.9135 13.7897 11.9087 13.7885C8.92447 13.046 7.92015 10.324 7.75649 9.81438C7.73889 9.75958 7.72816 9.70307 7.73017 9.64555C7.73505 9.50579 7.77444 9.22919 7.99631 9.066L8.59139 8.60176C8.87684 8.37668 9.0752 7.84445 8.76919 7.31926C8.30184 6.53471 7.75615 5.79652 7.13997 5.11532C7.00588 4.95536 6.81796 4.84631 6.6092 4.80727C6.60898 4.80723 6.60887 4.80753 6.60908 4.80763ZM12.1909 3.39906C12.0305 3.39906 11.8767 3.46082 11.7633 3.57074C11.6499 3.68067 11.5862 3.82976 11.5862 3.98521C11.5862 4.14067 11.6499 4.28976 11.7633 4.39969C11.8767 4.50961 12.0305 4.57137 12.1909 4.57137C13.721 4.57137 14.991 5.05553 15.9961 5.984C16.5126 6.49161 16.9153 7.093 17.179 7.75184C17.4439 8.41185 17.5648 9.11641 17.5334 9.82214C17.5301 9.89911 17.5424 9.97597 17.5697 10.0483C17.597 10.1207 17.6388 10.1871 17.6926 10.2438C17.8012 10.3584 17.9524 10.4264 18.1128 10.4329C18.2732 10.4394 18.4296 10.3839 18.5478 10.2786C18.666 10.1733 18.7362 10.0268 18.7429 9.87137C18.7804 9.00326 18.6318 8.13705 18.3063 7.32746C17.9794 6.51404 17.4837 5.7743 16.85 5.15401L16.8379 5.14228C15.5909 3.98756 14.0125 3.39906 12.1909 3.39906ZM12.1498 5.32633C11.9894 5.32633 11.8356 5.38809 11.7222 5.49802C11.6088 5.60794 11.545 5.75703 11.545 5.91249C11.545 6.06795 11.6088 6.21704 11.7222 6.32696C11.8356 6.43689 11.9894 6.49864 12.1498 6.49864H12.1704C13.2735 6.57484 14.0766 6.93122 14.639 7.51621C15.216 8.11877 15.5147 8.86788 15.4917 9.794C15.488 9.94946 15.5482 10.1 15.659 10.2124C15.7698 10.3249 15.9222 10.3901 16.0826 10.3936C16.243 10.3972 16.3983 10.3389 16.5143 10.2315C16.6303 10.1241 16.6976 9.97642 16.7012 9.82096C16.7303 8.60569 16.3266 7.55677 15.5264 6.71988C15.5259 6.71934 15.5256 6.71862 15.5256 6.71787C15.5256 6.71711 15.5253 6.71639 15.5248 6.71584C14.706 5.8653 13.5826 5.4154 12.2308 5.32751L12.2103 5.32516L12.1498 5.32633ZM12.1268 7.28995C12.0459 7.28303 11.9644 7.29199 11.8871 7.31628C11.8098 7.34058 11.7383 7.37973 11.677 7.43138C11.6157 7.48303 11.5657 7.54612 11.5301 7.6169C11.4945 7.68769 11.474 7.7647 11.4697 7.84334C11.4655 7.92198 11.4777 8.00064 11.5055 8.07462C11.5333 8.14861 11.5763 8.2164 11.6317 8.27395C11.6872 8.3315 11.754 8.37762 11.8283 8.40957C11.9026 8.44153 11.9827 8.45865 12.0639 8.45992C12.5695 8.48571 12.8925 8.63342 13.0957 8.83154C13.3001 9.03083 13.4525 9.35087 13.4803 9.85144C13.4818 9.9301 13.4996 10.0077 13.5327 10.0795C13.5658 10.1513 13.6135 10.216 13.6729 10.2696C13.7323 10.3232 13.8023 10.3647 13.8786 10.3915C13.9549 10.4184 14.036 10.43 14.117 10.4259C14.1981 10.4217 14.2774 10.4018 14.3504 10.3672C14.4233 10.3327 14.4883 10.2843 14.5415 10.2249C14.5948 10.1655 14.6351 10.0963 14.6602 10.0215C14.6852 9.94664 14.6945 9.86769 14.6874 9.78931C14.6487 9.08593 14.4213 8.4646 13.9556 8.0074C13.4875 7.5502 12.8501 7.32747 12.1268 7.28995Z" fill="#B11F20"/>
+                                                                                </svg>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                                                        <path d="M12.7368 0C6.11282 0 0.736816 5.376 0.736816 12C0.736816 18.624 6.11282 24 12.7368 24C19.3608 24 24.7368 18.624 24.7368 12C24.7368 5.376 19.3608 0 12.7368 0ZM18.3048 8.16C18.1248 10.056 17.3448 14.664 16.9488 16.788C16.7808 17.688 16.4448 17.988 16.1328 18.024C15.4368 18.084 14.9088 17.568 14.2368 17.124C13.1808 16.428 12.5808 15.996 11.5608 15.324C10.3728 14.544 11.1408 14.112 11.8248 13.416C12.0048 13.236 15.0768 10.44 15.1368 10.188C15.1452 10.1498 15.144 10.1102 15.1336 10.0726C15.1231 10.0349 15.1036 10.0004 15.0768 9.972C15.0048 9.912 14.9088 9.936 14.8248 9.948C14.7168 9.972 13.0368 11.088 9.76082 13.296C9.28082 13.62 8.84882 13.788 8.46482 13.776C8.03282 13.764 7.21682 13.536 6.60482 13.332C5.84882 13.092 5.26082 12.96 5.30882 12.54C5.33282 12.324 5.63282 12.108 6.19682 11.88C9.70082 10.356 12.0288 9.348 13.1928 8.868C16.5288 7.476 17.2128 7.236 17.6688 7.236C17.7648 7.236 17.9928 7.26 18.1368 7.38C18.2041 7.43385 18.245 7.49903 18.2701 7.56283C18.3054 7.65281 18.2999 7.75297 18.3032 7.84958C18.3064 7.94309 18.312 8.06004 18.3048 8.16Z" fill="#B11F20"/>
+                                                                                </svg>
+                                                                        </a>
+                                                                        <a href="tel:0954783480">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                                                        <g clip-path="url(#clip0_1613_206)">
+                                                                                        <path d="M8.4665 1.15351C8.10557 0.281636 7.154 -0.182427 6.24463 0.0660105L2.11963 1.19101C1.304 1.41601 0.736816 2.15664 0.736816 3.00039C0.736816 14.5973 10.1399 24.0004 21.7368 24.0004C22.5806 24.0004 23.3212 23.4332 23.5462 22.6176L24.6712 18.4926C24.9196 17.5832 24.4556 16.6316 23.5837 16.2707L19.0837 14.3957C18.3196 14.077 17.4337 14.2973 16.9134 14.9395L15.0196 17.2504C11.7196 15.6894 9.04775 13.0176 7.48682 9.71757L9.79775 7.82851C10.4399 7.30351 10.6603 6.42226 10.3415 5.6582L8.4665 1.1582V1.15351Z" fill="#B11F20"/>
+                                                                                        </g>
+                                                                                        <defs>
+                                                                                        <clipPath id="clip0_1613_206">
+                                                                                        <rect width="24" height="24" fill="white" transform="translate(0.736816)"/>
+                                                                                        </clipPath>
+                                                                                        </defs>
+                                                                                </svg>
+                                                                                <span>(095) 478-34-80</span>
+                                                                        </a>
+                                                                </div>
+                                                                <a href="mailto:sale1(at)alay.com.ua">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
+                                                                                <path d="M3.1 24C2.2475 24 1.51745 23.706 0.909852 23.118C0.302252 22.53 -0.0010307 21.824 2.63158e-06 21V3C2.63158e-06 2.175 0.303803 1.4685 0.911403 0.880502C1.519 0.292502 2.24854 -0.000997453 3.1 2.54669e-06H27.9C28.7525 2.54669e-06 29.4825 0.294002 30.0901 0.882002C30.6977 1.47 31.001 2.176 31 3V21C31 21.825 30.6962 22.5315 30.0886 23.1195C29.481 23.7075 28.7515 24.001 27.9 24H3.1ZM15.5 13.2375C15.6292 13.2375 15.765 13.2185 15.9076 13.1805C16.0502 13.1425 16.1856 13.0865 16.3137 13.0125L27.28 6.375C27.4867 6.25 27.6417 6.0935 27.745 5.9055C27.8483 5.7175 27.9 5.5115 27.9 5.2875C27.9 4.7875 27.6804 4.4125 27.2412 4.1625C26.8021 3.9125 26.35 3.925 25.885 4.2L16.0187 10.1854C15.6999 10.3787 15.3001 10.3787 14.9813 10.1854L5.115 4.2C4.65 3.925 4.19792 3.919 3.75875 4.182C3.31959 4.445 3.1 4.8135 3.1 5.2875C3.1 5.5375 3.15167 5.7565 3.255 5.9445C3.35834 6.1325 3.51334 6.276 3.72 6.375L14.6863 13.0125C14.8154 13.0875 14.9513 13.144 15.0939 13.182C15.2365 13.22 15.3719 13.2385 15.5 13.2375Z" fill="#B11F20"/>
+                                                                        </svg>
+                                                                        <span>sale1(at)alay.com.ua</span>
+                                                                </a>
+                                                        </li>
+                                                        <li class="contacts__block__item-list-item">
+                                                                <p class="bold-text">Тетяна</p>
+                                                                <div class="contacts__icon-block">
+                                                                        <a href="#">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
+                                                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1464 0.618345C13.341 -0.206115 9.39473 -0.206115 5.58936 0.618345L5.17933 0.706268C4.10892 0.938222 3.12581 1.45324 2.33921 2.19412C1.55261 2.935 0.993312 3.87272 0.723449 4.90313C-0.24115 8.58714 -0.24115 12.4463 0.723449 16.1303C0.980806 17.113 1.50166 18.0123 2.23321 18.737C2.81488 19.3132 3.51329 19.7627 4.28178 20.0589C4.64533 20.199 4.93151 20.5026 4.99787 20.8865L5.45147 23.5112C5.46943 23.6145 5.51564 23.7113 5.58529 23.7915C5.65494 23.8716 5.74549 23.9322 5.8475 23.9669C5.94952 24.0016 6.05927 24.0092 6.16533 23.9888C6.27139 23.9685 6.36988 23.9209 6.45054 23.8511L9.44609 21.2539C9.64333 21.0829 9.8996 20.9967 10.1604 21.0082C12.5052 21.1119 14.8545 20.913 17.1464 20.4163L17.5576 20.3284C18.628 20.0964 19.6111 19.5814 20.3977 18.8405C21.1843 18.0996 21.7436 17.1619 22.0135 16.1315C22.978 12.4475 22.978 8.58832 22.0135 4.9043C21.7435 3.87375 21.184 2.93592 20.3972 2.19503C19.6104 1.45414 18.627 0.939201 17.5564 0.70744L17.1464 0.618345ZM6.60908 4.80763C6.60928 4.80773 6.60919 4.80803 6.60896 4.808C6.38739 4.77702 6.16159 4.81943 5.96808 4.92824C5.96322 4.93097 5.95775 4.93244 5.95218 4.93244C5.94666 4.93244 5.94122 4.93388 5.93642 4.93662C5.48577 5.19385 5.07948 5.51714 4.73302 5.89725C4.44273 6.22198 4.28549 6.55022 4.24437 6.86675C4.22072 7.05012 4.23637 7.23572 4.2902 7.41152C4.29257 7.41928 4.29795 7.42574 4.30509 7.42959C4.31194 7.43327 4.31716 7.43938 4.31974 7.44672C4.64579 8.37227 5.07018 9.26287 5.58815 10.1011C6.25626 11.279 7.07785 12.3686 8.03271 13.3433C8.03988 13.3506 8.04651 13.3585 8.05254 13.3667L8.05309 13.3675C8.06595 13.3852 8.08157 13.4006 8.09936 13.4133C8.11206 13.4224 8.12367 13.4329 8.13398 13.4446L8.13503 13.4458C8.14252 13.4544 8.15068 13.4623 8.15941 13.4695L8.18016 13.4868C9.1922 14.4195 10.323 15.2232 11.545 15.8783C12.939 16.6141 13.7862 16.9623 14.2958 17.1082C14.2978 17.1088 14.2991 17.1106 14.2991 17.1127C14.2991 17.1148 14.3005 17.1166 14.3025 17.1172C14.4499 17.1611 14.5844 17.1807 14.72 17.1807C15.1537 17.1497 15.5642 16.9788 15.886 16.6954C16.278 16.3587 16.6099 15.9625 16.8684 15.522C16.8698 15.5196 16.8706 15.5169 16.8706 15.5142C16.8706 15.5115 16.8713 15.5089 16.8725 15.5066C17.1133 15.0625 17.0305 14.6443 16.6807 14.3601C15.9761 13.7635 15.2143 13.2335 14.4056 12.7775C13.8637 12.4927 13.3134 12.665 13.0908 12.9534L12.6155 13.5348C12.3878 13.8036 11.9879 13.7873 11.9344 13.7838C11.9304 13.7835 11.9266 13.7844 11.9231 13.7865C11.9188 13.789 11.9135 13.7897 11.9087 13.7885C8.92447 13.046 7.92015 10.324 7.75649 9.81438C7.73889 9.75958 7.72816 9.70307 7.73017 9.64555C7.73505 9.50579 7.77444 9.22919 7.99631 9.066L8.59139 8.60176C8.87684 8.37668 9.0752 7.84445 8.76919 7.31926C8.30184 6.53471 7.75615 5.79652 7.13997 5.11532C7.00588 4.95536 6.81796 4.84631 6.6092 4.80727C6.60898 4.80723 6.60887 4.80753 6.60908 4.80763ZM12.1909 3.39906C12.0305 3.39906 11.8767 3.46082 11.7633 3.57074C11.6499 3.68067 11.5862 3.82976 11.5862 3.98521C11.5862 4.14067 11.6499 4.28976 11.7633 4.39969C11.8767 4.50961 12.0305 4.57137 12.1909 4.57137C13.721 4.57137 14.991 5.05553 15.9961 5.984C16.5126 6.49161 16.9153 7.093 17.179 7.75184C17.4439 8.41185 17.5648 9.11641 17.5334 9.82214C17.5301 9.89911 17.5424 9.97597 17.5697 10.0483C17.597 10.1207 17.6388 10.1871 17.6926 10.2438C17.8012 10.3584 17.9524 10.4264 18.1128 10.4329C18.2732 10.4394 18.4296 10.3839 18.5478 10.2786C18.666 10.1733 18.7362 10.0268 18.7429 9.87137C18.7804 9.00326 18.6318 8.13705 18.3063 7.32746C17.9794 6.51404 17.4837 5.7743 16.85 5.15401L16.8379 5.14228C15.5909 3.98756 14.0125 3.39906 12.1909 3.39906ZM12.1498 5.32633C11.9894 5.32633 11.8356 5.38809 11.7222 5.49802C11.6088 5.60794 11.545 5.75703 11.545 5.91249C11.545 6.06795 11.6088 6.21704 11.7222 6.32696C11.8356 6.43689 11.9894 6.49864 12.1498 6.49864H12.1704C13.2735 6.57484 14.0766 6.93122 14.639 7.51621C15.216 8.11877 15.5147 8.86788 15.4917 9.794C15.488 9.94946 15.5482 10.1 15.659 10.2124C15.7698 10.3249 15.9222 10.3901 16.0826 10.3936C16.243 10.3972 16.3983 10.3389 16.5143 10.2315C16.6303 10.1241 16.6976 9.97642 16.7012 9.82096C16.7303 8.60569 16.3266 7.55677 15.5264 6.71988C15.5259 6.71934 15.5256 6.71862 15.5256 6.71787C15.5256 6.71711 15.5253 6.71639 15.5248 6.71584C14.706 5.8653 13.5826 5.4154 12.2308 5.32751L12.2103 5.32516L12.1498 5.32633ZM12.1268 7.28995C12.0459 7.28303 11.9644 7.29199 11.8871 7.31628C11.8098 7.34058 11.7383 7.37973 11.677 7.43138C11.6157 7.48303 11.5657 7.54612 11.5301 7.6169C11.4945 7.68769 11.474 7.7647 11.4697 7.84334C11.4655 7.92198 11.4777 8.00064 11.5055 8.07462C11.5333 8.14861 11.5763 8.2164 11.6317 8.27395C11.6872 8.3315 11.754 8.37762 11.8283 8.40957C11.9026 8.44153 11.9827 8.45865 12.0639 8.45992C12.5695 8.48571 12.8925 8.63342 13.0957 8.83154C13.3001 9.03083 13.4525 9.35087 13.4803 9.85144C13.4818 9.9301 13.4996 10.0077 13.5327 10.0795C13.5658 10.1513 13.6135 10.216 13.6729 10.2696C13.7323 10.3232 13.8023 10.3647 13.8786 10.3915C13.9549 10.4184 14.036 10.43 14.117 10.4259C14.1981 10.4217 14.2774 10.4018 14.3504 10.3672C14.4233 10.3327 14.4883 10.2843 14.5415 10.2249C14.5948 10.1655 14.6351 10.0963 14.6602 10.0215C14.6852 9.94664 14.6945 9.86769 14.6874 9.78931C14.6487 9.08593 14.4213 8.4646 13.9556 8.0074C13.4875 7.5502 12.8501 7.32747 12.1268 7.28995Z" fill="#B11F20"/>
+                                                                                </svg>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                                                        <path d="M12.7368 0C6.11282 0 0.736816 5.376 0.736816 12C0.736816 18.624 6.11282 24 12.7368 24C19.3608 24 24.7368 18.624 24.7368 12C24.7368 5.376 19.3608 0 12.7368 0ZM18.3048 8.16C18.1248 10.056 17.3448 14.664 16.9488 16.788C16.7808 17.688 16.4448 17.988 16.1328 18.024C15.4368 18.084 14.9088 17.568 14.2368 17.124C13.1808 16.428 12.5808 15.996 11.5608 15.324C10.3728 14.544 11.1408 14.112 11.8248 13.416C12.0048 13.236 15.0768 10.44 15.1368 10.188C15.1452 10.1498 15.144 10.1102 15.1336 10.0726C15.1231 10.0349 15.1036 10.0004 15.0768 9.972C15.0048 9.912 14.9088 9.936 14.8248 9.948C14.7168 9.972 13.0368 11.088 9.76082 13.296C9.28082 13.62 8.84882 13.788 8.46482 13.776C8.03282 13.764 7.21682 13.536 6.60482 13.332C5.84882 13.092 5.26082 12.96 5.30882 12.54C5.33282 12.324 5.63282 12.108 6.19682 11.88C9.70082 10.356 12.0288 9.348 13.1928 8.868C16.5288 7.476 17.2128 7.236 17.6688 7.236C17.7648 7.236 17.9928 7.26 18.1368 7.38C18.2041 7.43385 18.245 7.49903 18.2701 7.56283C18.3054 7.65281 18.2999 7.75297 18.3032 7.84958C18.3064 7.94309 18.312 8.06004 18.3048 8.16Z" fill="#B11F20"/>
+                                                                                </svg>
+                                                                        </a>
+                                                                        <a href="tel:0503463528">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                                                        <g clip-path="url(#clip0_1613_206)">
+                                                                                        <path d="M8.4665 1.15351C8.10557 0.281636 7.154 -0.182427 6.24463 0.0660105L2.11963 1.19101C1.304 1.41601 0.736816 2.15664 0.736816 3.00039C0.736816 14.5973 10.1399 24.0004 21.7368 24.0004C22.5806 24.0004 23.3212 23.4332 23.5462 22.6176L24.6712 18.4926C24.9196 17.5832 24.4556 16.6316 23.5837 16.2707L19.0837 14.3957C18.3196 14.077 17.4337 14.2973 16.9134 14.9395L15.0196 17.2504C11.7196 15.6894 9.04775 13.0176 7.48682 9.71757L9.79775 7.82851C10.4399 7.30351 10.6603 6.42226 10.3415 5.6582L8.4665 1.1582V1.15351Z" fill="#B11F20"/>
+                                                                                        </g>
+                                                                                        <defs>
+                                                                                        <clipPath id="clip0_1613_206">
+                                                                                        <rect width="24" height="24" fill="white" transform="translate(0.736816)"/>
+                                                                                        </clipPath>
+                                                                                        </defs>
+                                                                                </svg>
+                                                                                <span>(050)346-35-28</span>
+                                                                        </a>
+                                                                </div>
+                                                                <a href="mailto:sale3(at)alay.com.ua">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
+                                                                                <path d="M3.1 24C2.2475 24 1.51745 23.706 0.909852 23.118C0.302252 22.53 -0.0010307 21.824 2.63158e-06 21V3C2.63158e-06 2.175 0.303803 1.4685 0.911403 0.880502C1.519 0.292502 2.24854 -0.000997453 3.1 2.54669e-06H27.9C28.7525 2.54669e-06 29.4825 0.294002 30.0901 0.882002C30.6977 1.47 31.001 2.176 31 3V21C31 21.825 30.6962 22.5315 30.0886 23.1195C29.481 23.7075 28.7515 24.001 27.9 24H3.1ZM15.5 13.2375C15.6292 13.2375 15.765 13.2185 15.9076 13.1805C16.0502 13.1425 16.1856 13.0865 16.3137 13.0125L27.28 6.375C27.4867 6.25 27.6417 6.0935 27.745 5.9055C27.8483 5.7175 27.9 5.5115 27.9 5.2875C27.9 4.7875 27.6804 4.4125 27.2412 4.1625C26.8021 3.9125 26.35 3.925 25.885 4.2L16.0187 10.1854C15.6999 10.3787 15.3001 10.3787 14.9813 10.1854L5.115 4.2C4.65 3.925 4.19792 3.919 3.75875 4.182C3.31959 4.445 3.1 4.8135 3.1 5.2875C3.1 5.5375 3.15167 5.7565 3.255 5.9445C3.35834 6.1325 3.51334 6.276 3.72 6.375L14.6863 13.0125C14.8154 13.0875 14.9513 13.144 15.0939 13.182C15.2365 13.22 15.3719 13.2385 15.5 13.2375Z" fill="#B11F20"/>
+                                                                        </svg>
+                                                                        <span>sale3(at)alay.com.ua</span>
+                                                                </a>
+                                                        </li>      
+                                                </ul>
+                                          </div>
+                                          <div class="contacts__block__item-right">
+                                                <h3 class="contacts__block__item-title title25">Відділ по роботі з проектними організаціями</h3>
+                                                <ul class="contacts__block__item-list">
+                                                        <li class="contacts__block__item-list-item">
+                                                                <p class="bold-text">Світлана</p>
+                                                                <div class="contacts__icon-block">
+                                                                        <a href="#">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
+                                                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1464 0.618345C13.341 -0.206115 9.39473 -0.206115 5.58936 0.618345L5.17933 0.706268C4.10892 0.938222 3.12581 1.45324 2.33921 2.19412C1.55261 2.935 0.993312 3.87272 0.723449 4.90313C-0.24115 8.58714 -0.24115 12.4463 0.723449 16.1303C0.980806 17.113 1.50166 18.0123 2.23321 18.737C2.81488 19.3132 3.51329 19.7627 4.28178 20.0589C4.64533 20.199 4.93151 20.5026 4.99787 20.8865L5.45147 23.5112C5.46943 23.6145 5.51564 23.7113 5.58529 23.7915C5.65494 23.8716 5.74549 23.9322 5.8475 23.9669C5.94952 24.0016 6.05927 24.0092 6.16533 23.9888C6.27139 23.9685 6.36988 23.9209 6.45054 23.8511L9.44609 21.2539C9.64333 21.0829 9.8996 20.9967 10.1604 21.0082C12.5052 21.1119 14.8545 20.913 17.1464 20.4163L17.5576 20.3284C18.628 20.0964 19.6111 19.5814 20.3977 18.8405C21.1843 18.0996 21.7436 17.1619 22.0135 16.1315C22.978 12.4475 22.978 8.58832 22.0135 4.9043C21.7435 3.87375 21.184 2.93592 20.3972 2.19503C19.6104 1.45414 18.627 0.939201 17.5564 0.70744L17.1464 0.618345ZM6.60908 4.80763C6.60928 4.80773 6.60919 4.80803 6.60896 4.808C6.38739 4.77702 6.16159 4.81943 5.96808 4.92824C5.96322 4.93097 5.95775 4.93244 5.95218 4.93244C5.94666 4.93244 5.94122 4.93388 5.93642 4.93662C5.48577 5.19385 5.07948 5.51714 4.73302 5.89725C4.44273 6.22198 4.28549 6.55022 4.24437 6.86675C4.22072 7.05012 4.23637 7.23572 4.2902 7.41152C4.29257 7.41928 4.29795 7.42574 4.30509 7.42959C4.31194 7.43327 4.31716 7.43938 4.31974 7.44672C4.64579 8.37227 5.07018 9.26287 5.58815 10.1011C6.25626 11.279 7.07785 12.3686 8.03271 13.3433C8.03988 13.3506 8.04651 13.3585 8.05254 13.3667L8.05309 13.3675C8.06595 13.3852 8.08157 13.4006 8.09936 13.4133C8.11206 13.4224 8.12367 13.4329 8.13398 13.4446L8.13503 13.4458C8.14252 13.4544 8.15068 13.4623 8.15941 13.4695L8.18016 13.4868C9.1922 14.4195 10.323 15.2232 11.545 15.8783C12.939 16.6141 13.7862 16.9623 14.2958 17.1082C14.2978 17.1088 14.2991 17.1106 14.2991 17.1127C14.2991 17.1148 14.3005 17.1166 14.3025 17.1172C14.4499 17.1611 14.5844 17.1807 14.72 17.1807C15.1537 17.1497 15.5642 16.9788 15.886 16.6954C16.278 16.3587 16.6099 15.9625 16.8684 15.522C16.8698 15.5196 16.8706 15.5169 16.8706 15.5142C16.8706 15.5115 16.8713 15.5089 16.8725 15.5066C17.1133 15.0625 17.0305 14.6443 16.6807 14.3601C15.9761 13.7635 15.2143 13.2335 14.4056 12.7775C13.8637 12.4927 13.3134 12.665 13.0908 12.9534L12.6155 13.5348C12.3878 13.8036 11.9879 13.7873 11.9344 13.7838C11.9304 13.7835 11.9266 13.7844 11.9231 13.7865C11.9188 13.789 11.9135 13.7897 11.9087 13.7885C8.92447 13.046 7.92015 10.324 7.75649 9.81438C7.73889 9.75958 7.72816 9.70307 7.73017 9.64555C7.73505 9.50579 7.77444 9.22919 7.99631 9.066L8.59139 8.60176C8.87684 8.37668 9.0752 7.84445 8.76919 7.31926C8.30184 6.53471 7.75615 5.79652 7.13997 5.11532C7.00588 4.95536 6.81796 4.84631 6.6092 4.80727C6.60898 4.80723 6.60887 4.80753 6.60908 4.80763ZM12.1909 3.39906C12.0305 3.39906 11.8767 3.46082 11.7633 3.57074C11.6499 3.68067 11.5862 3.82976 11.5862 3.98521C11.5862 4.14067 11.6499 4.28976 11.7633 4.39969C11.8767 4.50961 12.0305 4.57137 12.1909 4.57137C13.721 4.57137 14.991 5.05553 15.9961 5.984C16.5126 6.49161 16.9153 7.093 17.179 7.75184C17.4439 8.41185 17.5648 9.11641 17.5334 9.82214C17.5301 9.89911 17.5424 9.97597 17.5697 10.0483C17.597 10.1207 17.6388 10.1871 17.6926 10.2438C17.8012 10.3584 17.9524 10.4264 18.1128 10.4329C18.2732 10.4394 18.4296 10.3839 18.5478 10.2786C18.666 10.1733 18.7362 10.0268 18.7429 9.87137C18.7804 9.00326 18.6318 8.13705 18.3063 7.32746C17.9794 6.51404 17.4837 5.7743 16.85 5.15401L16.8379 5.14228C15.5909 3.98756 14.0125 3.39906 12.1909 3.39906ZM12.1498 5.32633C11.9894 5.32633 11.8356 5.38809 11.7222 5.49802C11.6088 5.60794 11.545 5.75703 11.545 5.91249C11.545 6.06795 11.6088 6.21704 11.7222 6.32696C11.8356 6.43689 11.9894 6.49864 12.1498 6.49864H12.1704C13.2735 6.57484 14.0766 6.93122 14.639 7.51621C15.216 8.11877 15.5147 8.86788 15.4917 9.794C15.488 9.94946 15.5482 10.1 15.659 10.2124C15.7698 10.3249 15.9222 10.3901 16.0826 10.3936C16.243 10.3972 16.3983 10.3389 16.5143 10.2315C16.6303 10.1241 16.6976 9.97642 16.7012 9.82096C16.7303 8.60569 16.3266 7.55677 15.5264 6.71988C15.5259 6.71934 15.5256 6.71862 15.5256 6.71787C15.5256 6.71711 15.5253 6.71639 15.5248 6.71584C14.706 5.8653 13.5826 5.4154 12.2308 5.32751L12.2103 5.32516L12.1498 5.32633ZM12.1268 7.28995C12.0459 7.28303 11.9644 7.29199 11.8871 7.31628C11.8098 7.34058 11.7383 7.37973 11.677 7.43138C11.6157 7.48303 11.5657 7.54612 11.5301 7.6169C11.4945 7.68769 11.474 7.7647 11.4697 7.84334C11.4655 7.92198 11.4777 8.00064 11.5055 8.07462C11.5333 8.14861 11.5763 8.2164 11.6317 8.27395C11.6872 8.3315 11.754 8.37762 11.8283 8.40957C11.9026 8.44153 11.9827 8.45865 12.0639 8.45992C12.5695 8.48571 12.8925 8.63342 13.0957 8.83154C13.3001 9.03083 13.4525 9.35087 13.4803 9.85144C13.4818 9.9301 13.4996 10.0077 13.5327 10.0795C13.5658 10.1513 13.6135 10.216 13.6729 10.2696C13.7323 10.3232 13.8023 10.3647 13.8786 10.3915C13.9549 10.4184 14.036 10.43 14.117 10.4259C14.1981 10.4217 14.2774 10.4018 14.3504 10.3672C14.4233 10.3327 14.4883 10.2843 14.5415 10.2249C14.5948 10.1655 14.6351 10.0963 14.6602 10.0215C14.6852 9.94664 14.6945 9.86769 14.6874 9.78931C14.6487 9.08593 14.4213 8.4646 13.9556 8.0074C13.4875 7.5502 12.8501 7.32747 12.1268 7.28995Z" fill="#B11F20"/>
+                                                                                </svg>
+                                                                        </a>
+                                                                        <a href="#">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                                                        <path d="M12.7368 0C6.11282 0 0.736816 5.376 0.736816 12C0.736816 18.624 6.11282 24 12.7368 24C19.3608 24 24.7368 18.624 24.7368 12C24.7368 5.376 19.3608 0 12.7368 0ZM18.3048 8.16C18.1248 10.056 17.3448 14.664 16.9488 16.788C16.7808 17.688 16.4448 17.988 16.1328 18.024C15.4368 18.084 14.9088 17.568 14.2368 17.124C13.1808 16.428 12.5808 15.996 11.5608 15.324C10.3728 14.544 11.1408 14.112 11.8248 13.416C12.0048 13.236 15.0768 10.44 15.1368 10.188C15.1452 10.1498 15.144 10.1102 15.1336 10.0726C15.1231 10.0349 15.1036 10.0004 15.0768 9.972C15.0048 9.912 14.9088 9.936 14.8248 9.948C14.7168 9.972 13.0368 11.088 9.76082 13.296C9.28082 13.62 8.84882 13.788 8.46482 13.776C8.03282 13.764 7.21682 13.536 6.60482 13.332C5.84882 13.092 5.26082 12.96 5.30882 12.54C5.33282 12.324 5.63282 12.108 6.19682 11.88C9.70082 10.356 12.0288 9.348 13.1928 8.868C16.5288 7.476 17.2128 7.236 17.6688 7.236C17.7648 7.236 17.9928 7.26 18.1368 7.38C18.2041 7.43385 18.245 7.49903 18.2701 7.56283C18.3054 7.65281 18.2999 7.75297 18.3032 7.84958C18.3064 7.94309 18.312 8.06004 18.3048 8.16Z" fill="#B11F20"/>
+                                                                                </svg>
+                                                                        </a>
+                                                                        <a href="tel:0508806380">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                                                        <g clip-path="url(#clip0_1613_206)">
+                                                                                        <path d="M8.4665 1.15351C8.10557 0.281636 7.154 -0.182427 6.24463 0.0660105L2.11963 1.19101C1.304 1.41601 0.736816 2.15664 0.736816 3.00039C0.736816 14.5973 10.1399 24.0004 21.7368 24.0004C22.5806 24.0004 23.3212 23.4332 23.5462 22.6176L24.6712 18.4926C24.9196 17.5832 24.4556 16.6316 23.5837 16.2707L19.0837 14.3957C18.3196 14.077 17.4337 14.2973 16.9134 14.9395L15.0196 17.2504C11.7196 15.6894 9.04775 13.0176 7.48682 9.71757L9.79775 7.82851C10.4399 7.30351 10.6603 6.42226 10.3415 5.6582L8.4665 1.1582V1.15351Z" fill="#B11F20"/>
+                                                                                        </g>
+                                                                                        <defs>
+                                                                                        <clipPath id="clip0_1613_206">
+                                                                                        <rect width="24" height="24" fill="white" transform="translate(0.736816)"/>
+                                                                                        </clipPath>
+                                                                                        </defs>
+                                                                                </svg>
+                                                                                <span>(050) 880-63-80</span>
+                                                                        </a>
+                                                                </div>
+                                                                <a href="mailto:sale2(at)alay.com.ua">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
+                                                                                <path d="M3.1 24C2.2475 24 1.51745 23.706 0.909852 23.118C0.302252 22.53 -0.0010307 21.824 2.63158e-06 21V3C2.63158e-06 2.175 0.303803 1.4685 0.911403 0.880502C1.519 0.292502 2.24854 -0.000997453 3.1 2.54669e-06H27.9C28.7525 2.54669e-06 29.4825 0.294002 30.0901 0.882002C30.6977 1.47 31.001 2.176 31 3V21C31 21.825 30.6962 22.5315 30.0886 23.1195C29.481 23.7075 28.7515 24.001 27.9 24H3.1ZM15.5 13.2375C15.6292 13.2375 15.765 13.2185 15.9076 13.1805C16.0502 13.1425 16.1856 13.0865 16.3137 13.0125L27.28 6.375C27.4867 6.25 27.6417 6.0935 27.745 5.9055C27.8483 5.7175 27.9 5.5115 27.9 5.2875C27.9 4.7875 27.6804 4.4125 27.2412 4.1625C26.8021 3.9125 26.35 3.925 25.885 4.2L16.0187 10.1854C15.6999 10.3787 15.3001 10.3787 14.9813 10.1854L5.115 4.2C4.65 3.925 4.19792 3.919 3.75875 4.182C3.31959 4.445 3.1 4.8135 3.1 5.2875C3.1 5.5375 3.15167 5.7565 3.255 5.9445C3.35834 6.1325 3.51334 6.276 3.72 6.375L14.6863 13.0125C14.8154 13.0875 14.9513 13.144 15.0939 13.182C15.2365 13.22 15.3719 13.2385 15.5 13.2375Z" fill="#B11F20"/>
+                                                                        </svg>
+                                                                        <span>sale4(at)alay.com.ua</span>
+                                                                </a>
+                                                        </li>   
+                                                </ul>
+                                          </div>
+                                </div> 
+                                <div class="contacts__block__item contacts__block__item_2">
+                                        <div class="contacts__block__item-left">
+                                                <h3 class="contacts__block__item-title title25">наш офіс</h3>
+                                                <ul class="contacts__block__item-list">
+                                                        <li class="contacts__block__item-list-item">
+                                                                <p class="contacts__block__item-text"><span class="bold-text">Графік роботи:</span> Пн.-Пт: з 9.00 до 17.30</p>
+                                                                <a href="https://goo.gl/maps/4e3rxwzTAvdipRAEA" target="_blank">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="24" viewBox="0 0 17 24" fill="none">
+                                                                                <path d="M8.5 11.4C7.69488 11.4 6.92273 11.0839 6.35343 10.5213C5.78412 9.95871 5.46429 9.19565 5.46429 8.4C5.46429 7.60435 5.78412 6.84129 6.35343 6.27868C6.92273 5.71607 7.69488 5.4 8.5 5.4C9.30512 5.4 10.0773 5.71607 10.6466 6.27868C11.2159 6.84129 11.5357 7.60435 11.5357 8.4C11.5357 8.79397 11.4572 9.18407 11.3046 9.54805C11.1521 9.91203 10.9285 10.2427 10.6466 10.5213C10.3647 10.7999 10.03 11.0209 9.66172 11.1716C9.29341 11.3224 8.89866 11.4 8.5 11.4ZM8.5 0C6.24566 0 4.08365 0.884997 2.48959 2.4603C0.895533 4.03561 0 6.17218 0 8.4C0 14.7 8.5 24 8.5 24C8.5 24 17 14.7 17 8.4C17 6.17218 16.1045 4.03561 14.5104 2.4603C12.9163 0.884997 10.7543 0 8.5 0Z" fill="#B11F20"/>
+                                                                                </svg>
+                                                                        <span>03061, Київ, УкраїнаПр-т Відрадний, 95 А2, офіс 202</span>
+                                                                </a>
+                                                                <a href="mailto:office@alay.com.ua">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
+                                                                                <path d="M3.1 24C2.2475 24 1.51745 23.706 0.909852 23.118C0.302252 22.53 -0.0010307 21.824 2.63158e-06 21V3C2.63158e-06 2.175 0.303803 1.4685 0.911403 0.880502C1.519 0.292502 2.24854 -0.000997453 3.1 2.54669e-06H27.9C28.7525 2.54669e-06 29.4825 0.294002 30.0901 0.882002C30.6977 1.47 31.001 2.176 31 3V21C31 21.825 30.6962 22.5315 30.0886 23.1195C29.481 23.7075 28.7515 24.001 27.9 24H3.1ZM15.5 13.2375C15.6292 13.2375 15.765 13.2185 15.9076 13.1805C16.0502 13.1425 16.1856 13.0865 16.3137 13.0125L27.28 6.375C27.4867 6.25 27.6417 6.0935 27.745 5.9055C27.8483 5.7175 27.9 5.5115 27.9 5.2875C27.9 4.7875 27.6804 4.4125 27.2412 4.1625C26.8021 3.9125 26.35 3.925 25.885 4.2L16.0187 10.1854C15.6999 10.3787 15.3001 10.3787 14.9813 10.1854L5.115 4.2C4.65 3.925 4.19792 3.919 3.75875 4.182C3.31959 4.445 3.1 4.8135 3.1 5.2875C3.1 5.5375 3.15167 5.7565 3.255 5.9445C3.35834 6.1325 3.51334 6.276 3.72 6.375L14.6863 13.0125C14.8154 13.0875 14.9513 13.144 15.0939 13.182C15.2365 13.22 15.3719 13.2385 15.5 13.2375Z" fill="#B11F20"/>
+                                                                        </svg>
+                                                                        <span>office@alay.com.ua</span>
+                                                                </a>
+                                                        </li> 
+                                                        <li class="contacts__block__item-list-item">
+                                                                <div class="contacts__tel-block">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                                                <g clip-path="url(#clip0_1613_206)">
+                                                                                <path d="M8.4665 1.15351C8.10557 0.281636 7.154 -0.182427 6.24463 0.0660105L2.11963 1.19101C1.304 1.41601 0.736816 2.15664 0.736816 3.00039C0.736816 14.5973 10.1399 24.0004 21.7368 24.0004C22.5806 24.0004 23.3212 23.4332 23.5462 22.6176L24.6712 18.4926C24.9196 17.5832 24.4556 16.6316 23.5837 16.2707L19.0837 14.3957C18.3196 14.077 17.4337 14.2973 16.9134 14.9395L15.0196 17.2504C11.7196 15.6894 9.04775 13.0176 7.48682 9.71757L9.79775 7.82851C10.4399 7.30351 10.6603 6.42226 10.3415 5.6582L8.4665 1.1582V1.15351Z" fill="#B11F20"/>
+                                                                                </g>
+                                                                                <defs>
+                                                                                <clipPath id="clip0_1613_206">
+                                                                                <rect width="24" height="24" fill="white" transform="translate(0.736816)"/>
+                                                                                </clipPath>
+                                                                                </defs>
+                                                                        </svg>
+                                                                        <div>
+                                                                                <p>(044) 500-13-43(56)</p>
+                                                                                <p>(044) 500-44-38(39)</p>
+                                                                                <p>(044) 531-98-19</p>
+                                                                                <p>(044) 531-98-20</p>
+                                                                        </div>
+                                                                </div>
+                                                        </li>    
+                                                </ul>
+                                          </div>
+                                </div>     
+                        </div>
+                        <div class="contacts__map container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.166253924302!2d30.42073498844262!3d50.41937399832353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c955deba68a5%3A0x1344ba87d3397b14!2z0JLRltC00YDQsNC00L3QuNC5INC_0YDQvtGB0L_QtdC60YIsIDk1LCDQsDIsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1693314597610!5m2!1suk!2sua"
+                                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="contacts__block container">
+                                <div class="contacts__block__item contacts__block__item_2">
+                                        <div class="contacts__block__item-left">
+                                                <h3 class="contacts__block__item-title title25">наш завод</h3>
+                                                <ul class="contacts__block__item-list">
+                                                        <li class="contacts__block__item-list-item">
+                                                                <p class="contacts__block__item-text"><span class="bold-text">Графік роботи:</span> Пн.-Пт: з 9.00 до 17.30</p>
+                                                                <a href="https://goo.gl/maps/ia9RUWLkkjr5HAAo7" target="_blank">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="24" viewBox="0 0 17 24" fill="none">
+                                                                                <path d="M8.5 11.4C7.69488 11.4 6.92273 11.0839 6.35343 10.5213C5.78412 9.95871 5.46429 9.19565 5.46429 8.4C5.46429 7.60435 5.78412 6.84129 6.35343 6.27868C6.92273 5.71607 7.69488 5.4 8.5 5.4C9.30512 5.4 10.0773 5.71607 10.6466 6.27868C11.2159 6.84129 11.5357 7.60435 11.5357 8.4C11.5357 8.79397 11.4572 9.18407 11.3046 9.54805C11.1521 9.91203 10.9285 10.2427 10.6466 10.5213C10.3647 10.7999 10.03 11.0209 9.66172 11.1716C9.29341 11.3224 8.89866 11.4 8.5 11.4ZM8.5 0C6.24566 0 4.08365 0.884997 2.48959 2.4603C0.895533 4.03561 0 6.17218 0 8.4C0 14.7 8.5 24 8.5 24C8.5 24 17 14.7 17 8.4C17 6.17218 16.1045 4.03561 14.5104 2.4603C12.9163 0.884997 10.7543 0 8.5 0Z" fill="#B11F20"/>
+                                                                                </svg>
+                                                                        <span>03182 Україна,м. Київ, вул. Миру 19-У</span>
+                                                                </a>
+                                                        </li>   
+                                                </ul>
+                                          </div>
+                                </div>     
+                        </div>
+                        <div class="contacts__map container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.6979051236176!2d30.418919676554847!3d50.40946737158441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9542f795d73%3A0x8eda40e736a03005!2z0JDQm9CQ0Jk!5e0!3m2!1suk!2sua!4v1693315071226!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                </div>
+        </main>
+        <button class="back_top-btn" onclick="topFunction()">
+            <img src="https://beta.nb-soft.tech/wp-content/themes/alay/img/go_top.png" alt="back to top">
+        </button>
+        <footer class="footer wrapper">
+            <div class="footer-container container">
+                <div class="footer__logo desktop-only">
+                    <img src="./img/logo footer.svg" alt="logo">
+                </div>
+                <div class="footer__body">
+                    <div class="footer__left">
+                        <div class="footer__logo mobile-only">
+                            <img src="https://beta.nb-soft.tech/wp-content/themes/alay/img/logo footer.svg" alt="logo">
+                        </div>
+                        <div class="footer__contact">
+                            <p class="footer__title">Контактна інформація</p>
+                            <div class="footer__contact-phone">
+                                <a href="tel:0960817449" class="footer-hover"><span
+                                        class="icon-phone_icon footer__icon"></span></a>
+
+                                <a href="https://wa.me/whatsapp" class="footer-hover"><span
+                                        class="icon-phone2_icon footer__icon"></span></a>
+
+                                <a href="https://t.me/support_site" class="footer-hover"><span
+                                        class="icon-telegram_icon footer__icon"></span></a>
+
+
+                                <a href="tel:0960817449" class="footer-hover">0960817449</a>
+                            </div>
+                            <div class="footer__contact-mail">
+                                <!-- add email address -->
+                                <a href="mailto:support@google.com" class="footer-hover"><span
+                                        class="icon-mail_icon footer__icon"></span></a>
+                                <a href="mailto:support@google.com" class="footer-hover">support@google.com</a>
+
+
+                            </div>
+                            <span class="footer__contact-social">
+                                <!-- add links to social networks -->
+                                <a href="https://facebook.com" class="footer-hover"><span
+                                        class="icon-fb_icon footer__icon"></span></a>
+
+                                <a href="viber://chat?number=%2B380960000000" class="footer-hover"><span
+                                        class="icon-viber_icon footer__icon"></span></a>
+
+                                <a href="https://t.me/support_site" class="footer-hover"><span
+                                        class="icon-telegram_icon footer__icon"></span></a>
+
+
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="footer__center">
+                        <div class="footer__catalog">
+                            <p class="footer__title">Каталог</p>
+                            <ul class="footer__catalog__list footer__list">
+                                <li class="footer__catalog__list-item footer__list-item "><a
+                                        href="https://beta.nb-soft.tech/product-category/kabelni-systemy-obigrivu-ta-antyobledeninnya-alay-heat/">Кабельні
+                                        системи обігріву та антиобледеніння ALAY HEAT</a>
+                                </li>
+                                <li class="footer__catalog__list-item footer__list-item "><a
+                                        href="https://beta.nb-soft.tech/product-category/kabelno-providnykova-produkcziya-tm-speczkabel-nvp-alaj/">Кабельно-провідникова
+                                        продукція ТМ «Спецкабель» НВП АЛАЙ</a>
+                                </li>
+                                <li class="footer__catalog__list-item footer__list-item "><a
+                                        href="https://beta.nb-soft.tech/product-category/ohoronno-pozhezhna-sygnalizacziya-nvp-alaj/">Охоронно-пожежна
+                                        сигналізація НВП АЛАЙ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__for-customers">
+                            <p class="footer__title">Для клієнтів</p>
+                            <ul class="footer__for-customers__list footer__list">
+                                <!-- сделать отображение пунктов меню из админки -->
+                                <li class="footer__for-customers__list-item footer__list-item"><a href="">Компанія</a>
+                                </li>
+                                <li class="footer__for-customers__list-item footer__list-item"><a href="">Статті</a>
+                                </li>
+                                <li class="footer__for-customers__list-item footer__list-item"><a href="">Продукція</a>
+                                </li>
+                                <li class="footer__for-customers__list-item footer__list-item"><a href="">Каталог</a>
+                                </li>
+                                <li class="footer__for-customers__list-item footer__list-item"><a href="">Якість</a>
+                                </li>
+                                <li class="footer__for-customers__list-item footer__list-item"><a href="">Контакти</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__news">
+                            <p class="footer__title">Новини</p>
+                            <div class="footer__news__list">
+                                <a class="footer__news__post" href="https://beta.nb-soft.tech/news/novaya-novost-8/">
+                                    <div class="footer__news__post-img img-bock">
+                                        <img src="https://beta.nb-soft.tech/wp-content/uploads/2023/07/banner.png"
+                                            alt="Новая новость 8">
+                                    </div>
+                                    <p class="footer__news__post-title">Новая новость 8</p>
+                                </a>
+                                <a class="footer__news__post"
+                                    href="https://beta.nb-soft.tech/news/eksport-do-krayin-yes-zbilshuyetsya-7/">
+                                    <div class="footer__news__post-img img-bock">
+                                        <img src="https://beta.nb-soft.tech/wp-content/uploads/2023/07/news_page-2.png"
+                                            alt="Експорт до країн ЄС збільшується 7">
+                                    </div>
+                                    <p class="footer__news__post-title">Експорт до країн ЄС збільшується 7</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__articles">
+                            <p class="footer__title">Статті</p>
+                            <div class="footer__articles__list ">
+                                <a class="footer__articles__post" href="https://beta.nb-soft.tech/testovaya-statya/">
+                                    <div class="footer__articles__post-img img-bock">
+                                        <img src="https://beta.nb-soft.tech/wp-content/uploads/2023/07/matthew-guay-q7wddmgcbfg-unsplash-1.png"
+                                            alt="Тестовая статья">
+                                    </div>
+                                    <p class="footer__articles__post-title">Тестовая статья</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="footer__copyright-left">
+                        <a href="#">Terms of Service </a>
+                        <a href="#">Privacy Policy </a>
+                    </div>
+                    <span>Всі права захищені 2023</span>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
